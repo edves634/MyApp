@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RatingBarTheme" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/star_empty</item>
+        <item name="colorControlActivated">@color/star_filled</item>
+
+    </style>
+    <style name="LargeRatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#CCCCCC</item>
+        <item name="colorControlActivated">#FFCC00</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:maxHeight">40dp</item>
+    </style>
+
+</resources>

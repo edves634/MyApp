@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- drawable/star_icon.xml -->
+    <vector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:width="18dp"
+        android:height="18dp"
+        android:viewportWidth="17.36"
+        android:viewportHeight="16"
+        >
+        <group>
+            <clip-path
+                android:pathData="M0 0H17.3576V16H0V0Z"
+                />
+            <path
+                android:pathData="M0 0V16H17.3576V0"
+                android:fillColor="#6D6D80"
+                />
+            <path
+                android:pathData="M0 0H17.3576V16H0V0Z"
+                android:strokeWidth="3"
+                android:strokeColor="#6D6D80"
+                />
+        </group>
+    </vector>
+

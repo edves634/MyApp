@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Фон - пустые звезды -->
+    <item android:id="@android:id/background">
+        <selector>
+            <item>
+                <bitmap
+                    android:src="@android:drawable/btn_star_big_off"
+                    android:gravity="fill"
+                    android:tileMode="repeat" />
+            </item>
+        </selector>
+    </item>
+
+    <!-- Прогресс - заполненные звезды -->
+    <item android:id="@android:id/progress">
+        <selector>
+            <item>
+                <bitmap
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="fill"
+                    android:src="@android:drawable/btn_star_big_on"
+                    android:tileMode="repeat" />
+            </item>
+        </selector>
+    </item>
+</layer-list>
