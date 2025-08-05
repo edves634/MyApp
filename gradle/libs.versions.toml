@@ -1,5 +1,12 @@
 [versions]
+activityVersion = "1.8.2"
 agp = "8.10.1"
+androidxActivityVersion = "1.8.0-alpha05"
+androidxJunit = "1.1.5"
+appcompatVersion = "1.6.1"
+constraintlayoutVersion = "2.1.4"
+espressoCoreVersion = "3.5.1"
+glide = "4.12.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
@@ -7,8 +14,21 @@ appcompat = "1.7.1"
 material = "1.12.0"
 activity = "1.10.1"
 constraintlayout = "2.2.1"
+materialVersion = "1.11.0"
+kotlin = "2.0.21"
+coreKtx = "1.16.0"
+runtimeSavedInstanceState = "1.0.0-alpha11"
+supportAnnotations = "28.0.0"
+annotation = "1.9.1"
 
 [libraries]
+androidx-activity-v180alpha05 = { module = "androidx.activity:activity", version.ref = "androidxActivityVersion" }
+androidx-activity-v182 = { module = "androidx.activity:activity", version.ref = "activityVersion" }
+androidx-appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-constraintlayout-v214 = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayoutVersion" }
+androidx-espresso-core-v351 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-junit-v115 = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -16,7 +36,13 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+material-v1110 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-runtime-saved-instance-state = { group = "androidx.compose.runtime", name = "runtime-saved-instance-state", version.ref = "runtimeSavedInstanceState" }
+support-annotations = { group = "com.android.support", name = "support-annotations", version.ref = "supportAnnotations" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 

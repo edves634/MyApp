@@ -6,6 +6,16 @@
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
 
+        <!-- Включение анимаций переходов -->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+
+
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+
         <!-- Дополнительные настройки -->
         <item name="android:statusBarColor" tools:targetApi="l" tools:ignore="ObsoleteSdkInt">?attr/colorPrimaryVariant</item>
     </style>

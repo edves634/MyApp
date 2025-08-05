@@ -1,5 +1,6 @@
 plugins {
-    alias(libs.plugins.android.application)
+    id("com.android.application")
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -8,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myapplication"
-        minSdk = 22
+        minSdk = 30
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -29,15 +30,32 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+
+
 }
 
 dependencies {
+    // Добавление Glide с правильным синтаксисом
+    implementation(libs.glide)
 
-    implementation(libs.appcompat)
-    implementation(libs.material)
-    implementation(libs.activity)
-    implementation(libs.constraintlayout)
+    // Остальные зависимости
+    implementation(libs.androidx.appcompat.v161)
+    implementation(libs.material.v1110)
+    implementation(libs.androidx.activity.v182)
+    implementation(libs.androidx.constraintlayout.v214)
+    implementation (libs.androidx.activity.v180alpha05)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.runtime.saved.instance.state)
+    implementation(libs.support.annotations)
+    implementation(libs.androidx.annotation)
+
     testImplementation(libs.junit)
-    androidTestImplementation(libs.ext.junit)
-    androidTestImplementation(libs.espresso.core)
+    androidTestImplementation(libs.androidx.junit.v115)
+    androidTestImplementation(libs.androidx.espresso.core.v351)
 }

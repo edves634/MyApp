@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actor_names">
+        <item>Pedro Pascal</item>
+        <item>Carl Weathers</item>
+        <item>Gina Carano</item>
+        <item>Misty Rosas</item>
+        <item>Rio Hackford</item>
+        <item>Chris Bartlett</item>
+    </string-array>
+</resources>
